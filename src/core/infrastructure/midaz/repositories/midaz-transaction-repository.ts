@@ -18,7 +18,7 @@ export class MidazTransactionRepository implements TransactionRepository {
     private readonly httpService: MidazHttpService
   ) {}
 
-  private baseUrl: string = process.env.MIDAZ_TRANSACTION_BASE_PATH as string
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH as string
 
   async create(
     organizationId: string,

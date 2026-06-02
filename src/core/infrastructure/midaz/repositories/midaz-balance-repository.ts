@@ -9,7 +9,7 @@ import { MidazBalanceMapper } from '../mappers/midaz-balance-mapper'
 
 @injectable()
 export class MidazBalanceRepository implements BalanceRepository {
-  private baseUrl: string = process.env.MIDAZ_TRANSACTION_BASE_PATH as string
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH as string
 
   constructor(
     @inject(MidazHttpService)

@@ -13,7 +13,7 @@ import { MidazPortfolioMapper } from '../mappers/midaz-portfolio-mapper'
 
 @injectable()
 export class MidazPortfolioRepository implements PortfolioRepository {
-  private baseUrl: string = process.env.MIDAZ_BASE_PATH as string
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH as string
 
   constructor(
     @inject(MidazHttpService)

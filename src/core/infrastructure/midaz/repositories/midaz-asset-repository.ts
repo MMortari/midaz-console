@@ -10,7 +10,7 @@ import { createQueryString } from '@/lib/search'
 
 @injectable()
 export class MidazAssetRepository implements AssetRepository {
-  private baseUrl: string = process.env.MIDAZ_BASE_PATH as string
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH as string
 
   constructor(
     @inject(MidazHttpService)

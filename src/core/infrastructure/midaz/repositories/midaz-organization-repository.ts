@@ -18,7 +18,7 @@ export class MidazOrganizationRepository implements OrganizationRepository {
     private readonly httpService: MidazHttpService
   ) {}
 
-  private baseUrl: string = process.env.MIDAZ_BASE_PATH + '/organizations'
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH + '/organizations'
 
   async create(
     organizationData: OrganizationEntity

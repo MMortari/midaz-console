@@ -14,7 +14,7 @@ import { MidazPaginationDto } from '../dto/midaz-pagination-dto'
 
 @injectable()
 export class MidazLedgerRepository implements LedgerRepository {
-  private baseUrl: string = process.env.MIDAZ_BASE_PATH as string
+  private baseUrl: string = process.env.MIDAZ_LEDGER_BASE_PATH as string
 
   constructor(
     @inject(MidazHttpService)
