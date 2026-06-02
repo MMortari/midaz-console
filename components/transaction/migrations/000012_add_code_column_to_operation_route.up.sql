@@ -1,1 +1,0 @@
-ALTER TABLE operation_route ADD COLUMN code TEXT;

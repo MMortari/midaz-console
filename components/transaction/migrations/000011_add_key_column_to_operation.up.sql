@@ -1,1 +1,0 @@
-ALTER TABLE operation ADD COLUMN balance_key TEXT NOT NULL DEFAULT 'default';

@@ -1,95 +1,75 @@
-# IDE and editor files
-.vscode/
-.idea/
-*.iml
-ide/
-tmp/
-CLAUDE.md
-.claude/
-.windsurf/
-.cursor/
-.run/onboarding.run.xml
-.run/transaction.run.xml
-
-# OS generated files
-.DS_Store
-
-# Build and binary files
-*__debug_bin1675735721
-components/mdz/bin/mdz
-dist/
-coverage.out
-scripts/coverage_ignore.txt
-reports/
-
-# Docker compose files
-components/ledger/_docker-compose.yml
-components/onboarding/_docker-compose.yml
-
-# Environment files
-.env
-
-# Dependencies
-node_modules/
-scripts/node_modules/
-scripts/demo-data/node_modules/
-scripts/demo-data/dist/
-scripts/demo-data/sdk-source/
-
-# Other
-postman/backups
-
-# === Console Component (components/console) ===
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/components/console/node_modules
-/components/console/.pnp
-/components/console/.pnp.js
-/components/console/.yarn/install-state.gz
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
 # testing
-/components/console/coverage
+/coverage
 
 # next.js
-/components/console/.next/
-/components/console/out/
+/.next/
+/out/
 
 # production
-/components/console/build
+/build
 
 # misc
-/components/console/.DS_Store
-/components/console/*.pem
+.DS_Store
+*.pem
 
 # debug
-/components/console/npm-debug.log*
-/components/console/yarn-debug.log*
-/components/console/yarn-error.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # local env files
-/components/console/.env
-/components/console/.env*.local
+.env
+.env*.local
+.env.playwright
 
 # vercel
-/components/console/.vercel
+.vercel
 
 # typescript
-/components/console/*.tsbuildinfo
-/components/console/next-env.d.ts
+*.tsbuildinfo
+next-env.d.ts
+
 
 # IDE's
-/components/console/.idea
-/components/console/*storybook.log
+.idea
+*storybook.log
 
 # Storybook
-/components/console/storybook-static/
+/storybook-static/
 
-# playwright
-/components/console/.env.playwright
-/components/console/playwright-report/
-/components/console/playwright/.cache/
-/components/console/blob-report/
-/components/console/tests/storage/
-.windsurfrules
-cert/
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/tests/storage/
+node_modules/
+
+# Docs
+/docs/
+
+# AI Rules
+.cursor/
+
+# YALC
+.yalc/
+yalc.lock
+
+# Lerian Protocol
+CLAUDE.md
+.claude/
+.protocol-assets/
+.protocol-backups/
 .mcp.json

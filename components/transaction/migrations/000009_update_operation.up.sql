@@ -1,2 +1,0 @@
-ALTER TABLE operation
-    ADD COLUMN IF NOT EXISTS balance_affected BOOLEAN NOT NULL DEFAULT true;

@@ -1,9 +1,0 @@
-BEGIN;
-
-ALTER TABLE transaction
-  ALTER COLUMN amount TYPE BIGINT USING amount::BIGINT;
-
-COMMIT;
-
-ALTER TABLE transaction
-    ADD COLUMN IF NOT EXISTS amount_scale BIGINT NOT NULL DEFAULT 0;

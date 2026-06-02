@@ -1,1 +1,0 @@
-ALTER TABLE operation_route DROP COLUMN code;
